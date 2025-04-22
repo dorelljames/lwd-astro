@@ -1,84 +1,158 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Image from 'astro:assets';
-import Logo from '@/assets/logo.png';
 ---
 
 <Layout title="Learn with Dorell | AI Automation">
-	<main class="max-w-4xl mx-auto px-4 py-12">
-		<div class="flex flex-col items-center mb-16">
-			<h1 class="text-4xl md:text-5xl font-bold text-center mb-3">Learn with Dorell</h1>
-			<p class="text-xl text-gray-600 text-center max-w-2xl">Automation & AI skills for the modern builder</p>
-		</div>
-		
-		<div class="prose prose-lg mx-auto">
-			<div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-8 rounded-2xl my-10 shadow-sm">
-				<div class="flex flex-col md:flex-row gap-8 items-center">
-					<div class="md:w-3/4">
-						<h2 class="text-3xl font-bold flex items-center gap-2 mb-4 text-indigo-900">
-							<span class="text-3xl">🧪</span> AI Automation Cohort
-						</h2>
-						
-						<p class="text-xl font-medium text-indigo-900 mb-2">Starting May 10th, 2025</p>
-						
-						<p class="mb-3">A 4-week cohort on automation with AI — real, practical workflows using tools like n8n, ChatGPT, APIs, and custom scripts.</p>
-						
-						<ul class="mb-4 space-y-2">
-							<li class="flex items-start gap-2">
-								<span class="text-indigo-600">✓</span> Limited to just 12 participants for personalized attention
-							</li>
-							<li class="flex items-start gap-2">
-								<span class="text-indigo-600">✓</span> Learn to build automation systems that save hours weekly
-							</li>
-							<li class="flex items-start gap-2">
-								<span class="text-indigo-600">✓</span> Hands-on projects with direct feedback and support
-							</li>
-						</ul>
-						
-						<div class="mt-6 flex flex-col sm:flex-row gap-4">
-							<a href="https://dorell.xyz/ai-automation-preregister" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors text-center shadow-sm">
-								👉 Pre-register now (7 spots left)
-							</a>
-							<a href="#" class="inline-block bg-white hover:bg-gray-100 text-indigo-600 font-medium py-3 px-6 rounded-lg border border-indigo-200 transition-colors text-center">
-								👉 Follow the journey
-							</a>
-						</div>
+	<div class="min-h-screen flex flex-col">
+		<!-- Simple, elegant header -->
+		<header class="py-8 border-b border-gray-100">
+			<div class="container mx-auto px-4">
+				<div class="flex justify-between items-center">
+					<div class="flex items-center gap-3">
+						<img src="/logo.png" alt="Learn with Dorell" class="w-10 h-10">
+						<span class="font-medium text-xl">Learn with Dorell</span>
 					</div>
-					<div class="hidden md:block md:w-1/4">
-						<div class="aspect-square bg-indigo-100 rounded-full flex items-center justify-center">
-							<span class="text-6xl">🚀</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<h2 class="text-3xl font-bold mt-16 mb-6 text-center">My Journey</h2>
-			
-			<p class="mb-6">I've spent a good part of my life quietly building things — and doing my best to pay it forward through the community. Whether it's organizing events, helping others break into tech, or building tools like Cebby — I've always believed in giving first.</p>
-			
-			<p class="mb-6">But lately, something's shifted in me.</p>
-			
-			<p class="mb-6">I've realized there's more I want to share — especially around automation, AI, and building faster. These tools have helped me grow in ways I wish I knew earlier, and I feel like I'm in a unique place now to teach them.</p>
-			
-			<p class="mb-6">That's why I'm rebooting Learn with Dorell with a renewed focus — not to become a guru, but to create a space where I can share what I'm learning and help others move forward too.</p>
-			
-			<div class="my-12 border-l-4 border-indigo-300 pl-6 italic">
-				<p class="text-xl">If you've been following my journey and want to learn directly with me, this is your chance to do that. If not, that's totally okay — I'll still be around sharing stuff for free, like I've always done.</p>
-			</div>
-			
-			<p class="mb-6">This is just me finally taking a step forward — not away from the community, but deeper into what I love doing: building, learning, and helping others grow.</p>
-			
-			<div class="mt-16 text-center space-y-4">
-				<p class="italic text-lg text-gray-600">Thanks for sticking around all these years. This is just the beginning of a new chapter.</p>
-				
-				<p class="font-medium text-xl">No pressure. Just real stuff — with heart, with purpose.</p>
-				
-				<div class="pt-6">
-					<a href="https://dorell.xyz/ai-automation-preregister" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition-colors text-center shadow-sm">
-						Join the cohort
+					<a href="https://dorell.xyz/ai-automation-preregister" class="text-indigo-600 hover:text-indigo-800 font-medium">
+						Pre-register →
 					</a>
 				</div>
 			</div>
-		</div>
-	</main>
+		</header>
+		
+		<main class="flex-grow">
+			<!-- Clean, focused hero section -->
+			<section class="py-24 md:py-32">
+				<div class="container mx-auto px-4 max-w-4xl">
+					<h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-8 leading-tight">
+						Learn automation & AI<br/> 
+						<span class="text-indigo-600">with Dorell</span>
+					</h1>
+					
+					<div class="text-xl md:text-2xl text-gray-600 max-w-2xl mb-12 leading-relaxed">
+						A 4-week cohort on building practical automation systems using AI tools, APIs, and custom workflows that save you hours every week.
+					</div>
+					
+					<div class="flex flex-col sm:flex-row gap-4">
+						<a href="https://dorell.xyz/ai-automation-preregister" class="inline-block bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 rounded-lg transition-colors text-center text-lg">
+							Join the May 10th cohort
+						</a>
+						<span class="self-center text-amber-700 font-medium text-sm">
+							Only 7 spots remaining
+						</span>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Personal story section -->
+			<section class="py-16 bg-gray-50">
+				<div class="container mx-auto px-4 max-w-3xl">
+					<h2 class="text-2xl md:text-3xl font-semibold mb-12 text-center">My Story</h2>
+					
+					<div class="prose prose-lg max-w-none italic">
+						<p>I've spent a good part of my life quietly building things — and doing my best to pay it forward through the community. Whether it's organizing events through <a href="https://jscebu.org">JavaScript Cebu</a>, <a href="https://react.jscebu.org">React Cebu</a> and originally at <a href="https://laravelcebu.org">Laravel Cebu</a>, helping others break into tech, or building tools like <a href="https://getcebby.com">Cebby</a> — I've always believed in giving first.</p>
+						
+						<p>But lately, something's shifted in me.</p>
+						
+						<p>I've realized there's more I want to share — especially around automation, AI, and building faster. These tools have helped me grow in ways I wish I knew earlier, and I feel like I'm in a unique place now to teach them.</p>
+						
+						<p>That's why I'm rebooting <strong>Learn with Dorell</strong> with a renewed focus — not to become a guru, but to create a space where I can share what I'm learning and help others move forward too.</p>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Details with clean layout -->
+			<section class="py-16">
+				<div class="container mx-auto px-4 max-w-4xl">
+					<div class="grid md:grid-cols-2 gap-16">
+						<div>
+							<h2 class="text-2xl font-semibold mb-8">What You'll Build</h2>
+							
+							<ul class="space-y-4">
+								<li class="flex gap-4">
+									<div class="text-2xl">⚡</div>
+									<div>
+										<h3 class="font-medium mb-1">Personal Automation System</h3>
+										<p class="text-gray-600">Create a custom system that handles repetitive tasks in your workflow</p>
+									</div>
+								</li>
+								<li class="flex gap-4">
+									<div class="text-2xl">🤖</div>
+									<div>
+										<h3 class="font-medium mb-1">AI Integration Workflows</h3>
+										<p class="text-gray-600">Connect ChatGPT and other AI tools to your existing systems</p>
+									</div>
+								</li>
+								<li class="flex gap-4">
+									<div class="text-2xl">🔄</div>
+									<div>
+										<h3 class="font-medium mb-1">Data Processing Pipeline</h3>
+										<p class="text-gray-600">Build an end-to-end system that processes information automatically</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+						<div>
+							<h2 class="text-2xl font-semibold mb-8">How It Works</h2>
+							
+							<div class="space-y-8">
+								<div>
+									<div class="text-sm uppercase tracking-wider text-indigo-600 mb-1">May 10 - June 7, 2025</div>
+									<h3 class="font-medium mb-2">4-Week Live Cohort</h3>
+									<p class="text-gray-600">Weekly live sessions, hands-on projects, and direct access to me throughout the program</p>
+								</div>
+								
+								<div>
+									<div class="text-sm uppercase tracking-wider text-indigo-600 mb-1">Small Group</div>
+									<h3 class="font-medium mb-2">Limited to 12 Participants</h3>
+									<p class="text-gray-600">Get personalized attention and build connections with other motivated builders</p>
+								</div>
+								
+								<div>
+									<div class="text-sm uppercase tracking-wider text-indigo-600 mb-1">Hands-on</div>
+									<h3 class="font-medium mb-2">Build Real Systems</h3>
+									<p class="text-gray-600">This isn't theory - you'll create working automation systems you can use immediately</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Simple quote section -->
+			<section class="py-16 bg-gray-50">
+				<div class="container mx-auto px-4 max-w-3xl">
+					<blockquote class="text-center">
+						<p class="text-xl md:text-2xl mb-6 italic">"If you've been following my journey and want to learn directly with me, this is your chance to do that. If not, that's totally okay — I'll still be around sharing stuff for free, like I've always done."</p>
+						<cite class="text-gray-600 not-italic">— Dorell</cite>
+					</blockquote>
+				</div>
+			</section>
+			
+			<!-- Simple CTA -->
+			<section class="py-16">
+				<div class="container mx-auto px-4 max-w-2xl text-center">
+					<h2 class="text-2xl md:text-3xl font-semibold mb-6">Join the Cohort</h2>
+					<p class="text-xl text-gray-600 mb-8">This is just me finally taking a step forward — not away from the community, but deeper into what I love doing: building, learning, and helping others grow.</p>
+					
+					<div class="flex flex-col sm:flex-row gap-4 justify-center">
+						<a href="https://dorell.xyz/ai-automation-preregister" class="inline-block bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 rounded-lg transition-colors">
+							Pre-register Now
+						</a>
+						<a href="#" class="inline-block bg-white hover:bg-gray-100 text-black font-medium py-3 px-8 rounded-lg border border-gray-200 transition-colors">
+							Follow the Journey
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<!-- Simple footer -->
+		<footer class="py-8 border-t border-gray-100">
+			<div class="container mx-auto px-4 text-center text-gray-500">
+				<p>No pressure. Just real stuff — with heart, with purpose.</p>
+				<p class="mt-4">Made with <span class="text-purple-600">💜</span> by <a href="https://dorelljames.com" class="text-indigo-600 hover:text-indigo-800 underline">Dorell</a></p>
+			</div>
+		</footer>
+	</div>
 </Layout>
