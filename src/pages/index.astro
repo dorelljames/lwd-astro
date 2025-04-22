@@ -1,9 +1,44 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+// Rich structured data for the page
+const jsonLd = {
+	"@context": "https://schema.org",
+	"@type": "Event",
+	"name": "AI Automation Cohort",
+	"description": "A 4-week cohort on building practical automation systems using AI tools, APIs, and custom workflows.",
+	"startDate": "2025-05-10T09:00:00-08:00",
+	"endDate": "2025-06-07T17:00:00-08:00", 
+	"location": {
+		"@type": "VirtualLocation",
+		"url": "https://dorell.xyz/ai-automation-preregister"
+	},
+	"organizer": {
+		"@type": "Person",
+		"name": "Dorell James",
+		"url": "https://dorelljames.com"
+	},
+	"offers": {
+		"@type": "Offer",
+		"availability": "https://schema.org/LimitedAvailability",
+		"availabilityStarts": "2025-04-01T00:00:00-08:00",
+		"availabilityEnds": "2025-05-09T23:59:59-08:00",
+		"url": "https://dorell.xyz/ai-automation-preregister"
+	},
+	"maximumAttendeeCapacity": 12
+};
 ---
 
-<Layout title="Learn with Dorell | AI Automation">
+<Layout 
+	title="Learn with Dorell | AI Automation Cohort" 
+	description="Join Dorell's 4-week AI Automation cohort and learn to build practical automation systems using AI tools, APIs, and custom workflows that save hours weekly. Limited to 12 participants."
+	keywords="AI automation, cohort learning, ChatGPT automation, n8n workflows, API integration, productivity, AI tools, Dorell James"
+	ogImage="/og-learn-with-dorell.png"
+>
 	<div class="min-h-screen flex flex-col">
+		<!-- Structured data for search engines -->
+		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+		
 		<!-- Simple, elegant header -->
 		<header class="py-8 border-b border-gray-100">
 			<div class="container mx-auto px-4">
