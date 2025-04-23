@@ -65,7 +65,11 @@ const {
 				}
 			}
 		</script>
-		<script defer src="https://stats.gocebby.com/script.js" data-website-id="98e01197-3712-40ff-941a-fc87d0f1c965"></script>
+		{
+			import.meta.env.PROD && (
+				<script defer src="https://stats.gocebby.com/script.js" data-website-id="98e01197-3712-40ff-941a-fc87d0f1c965"></script>
+			)
+		}
 	</head>
 	<body>
 		<slot />
