@@ -13,22 +13,16 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: "Noto Sans",
-        cssVariable: "--font-noto-sans",
+        name: "Inter",
+        cssVariable: "--font-inter",
         weights: ["400", "500", "600", "700"],
       },
-      // {
-      //   provider: fontProviders.fontshare(),
-      //   name: "Chubbo",
-      //   cssVariable: "--font-chubbo",
-      //   weights: ["400", "500", "600", "700"],
-      // },
-      // {
-      //   provider: fontProviders.fontshare(),
-      //   name: "Supreme",
-      //   cssVariable: "--font-supreme",
-      //   weights: ["400", "500", "600", "700"],
-      // },
+      {
+        provider: fontProviders.google(),
+        name: "Roboto Serif",
+        cssVariable: "--font-roboto-serif",
+        weights: ["400", "500", "600", "700"],
+      },
     ],
   },
 });
