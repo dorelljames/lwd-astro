@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+	title="AI & Automation Newsletter | Learn with Dorell" 
+	description="Subscribe to receive curated AI tools, automation tips, and exclusive insights to supercharge your productivity."
+	keywords="AI newsletter, automation tools, ChatGPT tips, productivity hacks, AI tutorials"
+	ogImage="/og-learn-with-dorell.png"
+>
+	<div class="min-h-screen flex flex-col">
+		<!-- Simple, elegant header -->
+		<header class="py-8 border-b border-gray-100">
+			<div class="container mx-auto px-4">
+				<div class="flex justify-between items-center">
+					<a href="/" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+						<img src="/logo.png" alt="Learn with Dorell" class="w-10 h-10">
+						<span class="font-medium text-xl">Learn with Dorell</span>
+					</a>
+					<a href="/" class="text-indigo-600 hover:text-indigo-800 font-medium">
+						← Back to homepage
+					</a>
+				</div>
+			</div>
+		</header>
+		
+		<main class="flex-grow">
+			<!-- Waitlist section with embedded n8n form -->
+			<section class="py-16 md:py-24">
+				<div class="container mx-auto px-4 max-w-2xl">
+					<h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-6 leading-tight text-center">
+						Stay Ahead with AI & Automation
+					</h1>
+					
+					<p class="text-xl text-gray-600 mb-8 text-center">
+						Join our newsletter and receive hand-picked AI tools, automation tips, and exclusive insights delivered to your inbox.
+					</p>
+
+					<div class="space-y-6 mb-12 text-center">
+						<div class="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-600">
+							<div class="flex items-center gap-2">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+								</svg>
+								<span>Weekly Updates</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+								</svg>
+								<span>Curated AI Tools</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+								</svg>
+								<span>Automation Tips</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="bg-white rounded-lg shadow-sm border border-gray-100 p-8 mb-12">
+						<!-- n8n Embedded Form -->
+						<iframe
+							src="https://n8n.dorellworks.com/form/92b8da10-aa92-4996-b35f-72923eb6d4cd"
+							frameborder="0"
+							width="100%"
+							height="100%"
+							style="min-height: 800px; border-radius: 0.5rem;"
+						></iframe>
+					</div>
+					
+					<div class="text-center text-gray-600 space-y-4">
+						<p class="text-sm">Join our growing community of AI enthusiasts and automation experts.</p>
+						<p class="text-sm">No spam, unsubscribe anytime. Your inbox deserves quality content.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<!-- Simple footer -->
+		<footer class="py-8 border-t border-gray-100">
+			<div class="container mx-auto px-4 text-center text-gray-500">
+				<p>Empowering you with AI & Automation insights</p>
+				<p class="mt-4">Made with <span class="text-purple-600">💜</span> by <a href="https://dorelljames.com" class="text-indigo-600 hover:text-indigo-800 underline">Dorell</a> &middot; <a href="https://github.com/dorelljames/lwd-astro" class="text-indigo-600 hover:text-indigo-800 underline">Source</a></p>
+			</div>
+		</footer>
+	</div>
+</Layout> 
