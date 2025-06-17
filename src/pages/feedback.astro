@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+	title="Share Your Feedback | Learn with Dorell" 
+	description="We'd love to hear your thoughts. Share your feedback and help us improve Learn with Dorell."
+	keywords="learn with dorell feedback, feedback form, suggestions, improvements"
+	ogImage="/og-learn-with-dorell.png"
+>
+	<div class="min-h-screen flex flex-col">
+		<!-- Simple, elegant header -->
+		<header class="py-8 border-b border-gray-100">
+			<div class="container mx-auto px-4">
+				<div class="flex justify-between items-center">
+					<a href="/" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+						<img src="/logo.png" alt="Learn with Dorell" class="w-10 h-10">
+						<span class="font-medium text-xl">Learn with Dorell</span>
+					</a>
+					<a href="/" class="text-indigo-600 hover:text-indigo-800 font-medium">
+						← Back to homepage
+					</a>
+				</div>
+			</div>
+		</header>
+		
+		<main class="flex-grow">
+			<!-- Waitlist section with embedded n8n form -->
+			<section class="py-16 md:py-24">
+				<div class="container mx-auto px-4 max-w-2xl">
+					<h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-8 leading-tight text-center">
+						We value your <span class="text-indigo-600">Feedback</span>
+					</h1>
+					
+					<p class="text-xl text-gray-600 mb-12 text-center">
+						Help us make Learn with Dorell even better. Let us know what you loved, what could be improved, or any features you'd like to see.
+					</p>
+					
+					<!-- n8n Embedded Form -->
+					<div class="mb-12">
+						<!-- n8n Embedded Form -->
+						<iframe
+							src="https://n8n.dorellworks.com/form/3b594ecb-e7bd-45db-a1d9-16d159fd4645"
+							frameborder="0"
+							width="100%"
+							height="100%"
+							style="min-height: 870px; border-radius: 0.5rem;"
+						></iframe>
+					</div>
+					
+					<div class="text-center text-gray-600">
+						<p>Thank you for taking the time to share your thoughts. Your feedback helps shape the future of Learn with Dorell.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<!-- Simple footer -->
+		<footer class="py-8 border-t border-gray-100">
+			<div class="container mx-auto px-4 text-center text-gray-500">
+				<p>No pressure. Just real stuff — with heart, with purpose.</p>
+				<p class="mt-4">Made with <span class="text-purple-600">💜</span> by <a href="https://dorelljames.com" class="text-indigo-600 hover:text-indigo-800 underline">Dorell</a> &middot; <a href="https://github.com/dorelljames/lwd-astro" class="text-indigo-600 hover:text-indigo-800 underline">Source</a></p>
+			</div>
+		</footer>
+	</div>
+</Layout> 
